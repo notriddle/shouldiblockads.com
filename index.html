@@ -39,8 +39,8 @@ details :link, details :visited {
 <h1><strong>Yes,</strong> you should use an ad blocker.</h1>
 <details><summary>Table of Contents</summary>
 <a href=#ha>What’s wrong with ads?</a>
-<a href=#hb>Do ad blockers stop sites from making money?</a>
 <a href=#hc>So, how do I block ads? Which ad blocker do you recommend?</a>
+<a href=#hb>Do ad blockers stop sites from making money?</a>
 <a href=#hd>Does Google Chrome already have an ad blocker?</a>
 <a href=#he>Do Firefox or Safari already have ad blockers?</a>
 </header>
@@ -71,14 +71,6 @@ details :link, details :visited {
 <p>While one advertiser <a href=https://edition.cnn.com/2020/02/03/tech/google-fishing-licenses-scam-ads/index.html>pretends to be the government</a>, <a href=https://www.bleepingcomputer.com/news/security/beware-of-amazon-prime-support-scams-in-google-search-ads>another one claims to be Amazon</a>, <a href=https://www.forbes.com/sites/daveywinder/2019/04/30/windows-warning-microsoft-support-scammers-are-freezing-chrome-edge-and-firefox-browsers>another one claims to be from Microsoft</a>, and another one claims to be <a href=https://www.luno.com/blog/en/post/google-ads-phishing-scams-identify-avoid>a cryptocurrency exchange</a>.
 <p>Wired.com was hit with <a href=http://www.wired.com/threatlevel/2012/04/rogue-ad-wired/>an ad that took over the entire page</a>, TV Tropes has a <a href=https://tvtropes.org/pmwiki/posts.php?discussion=13223684920A10189100>public record of hundreds of ads that have broken their website</a>, and <a href=https://news.ycombinator.com/item?id=20530056>BidFilter</a> (an ad tech company) has a report on how one worked.
 <p>According to <a href="https://web.archive.org/web/20140605095541/https://www.symantec.com/content/en/us/enterprise/other_resources/b-istr_main_report_v18_2012_21291018.en-us.pdf#page=27">Symantec (page 27)</a>, over half of the web sites that they tested had malicious advertisements. And the relative lack of actual sales figures to justify up all this work <a href="https://www.wired.com/story/ad-tech-could-be-the-next-internet-bubble/">has been documented for years</a>.
-<h2 id=hb>Do ad blockers stop sites from making money?</h2>
-<p>Ad blockers do not block all advertising. That would be impossible. Something is an advertisement if it was written with an intent to sell something, and ad blockers can’t know what the intent behind any arbitrary web page is.
-<p>And even if the author of a block list knows that something is an ad, they won’t necessarily block it. The most popular ad blocking list on the internet, EasyList, <a href="https://easylist.to/2011/07/11/the-definition-of-advert-and-link-exchange-policy.html">uses a much more narrow definition of an “advert” than the dictionary does</a>: they only block ads that are sold to a third party.
-<p>Mostly, ad blockers will block something if it is sent through an ad network.
-<p>An <i>ad network</i> is a company that matches up ads with websites. It’s kind of like online dating: the web sites and advertisers use keywords to identify the interests that they cater to, and the ad network is the matchmaker that puts them together <sup id=boot-3><a href=#foot-3>3</a></sup>.
-<section class=center><img src=cheesy-diagram.svg></section>
-<p>And all of the downsides of online dating apply to ad networking. The author of the content might be perfectly trustworthy, but if their website is matched with a bad advertiser, the result is a really bad date. And because ad networks are so permissive, nobody knows if it’s going to turn out well until it’s already too late.
-<p>Ad blockers will definitely not block advertisements <a href=https://www.amazon.com/Manufacturing-Consent-audiobook/dp/B06Y2LSTZZ>that are completely integrated with the content that you wanted to open</a>, but when that sort of thing happens, it means that the author of the content knew about what they were advertising, instead of just having a banner ad automatically stuck to their page. Figuring out if you can trust the author of the web page that you opened is something you had to do anyway.
 <h2 id=hc>So, how do I block ads? Which ad blocker do you recommend?</h2>
 <section id=ub>
   <img src=ublockorigin.png class=pull-right>
@@ -98,6 +90,14 @@ details :link, details :visited {
   <p>This one is the best option if you have lots of computers. You install Pi-hole on your network, reconfigure a router setting, and every device in your home or small office will have its ads blocked.
   <footer>Installation instructions are <a href=https://pi-hole.net/>on their website</a>
 </section>
+<h2 id=hb>Do ad blockers stop sites from making money?</h2>
+<p>Ad blockers do not block all advertising. That would be impossible. Something is an advertisement if it was written with an intent to sell something, and ad blockers can’t know what the intent behind any arbitrary web page is.
+<p>And even if the author of a block list knows that something is an ad, they won’t necessarily block it. The most popular ad blocking list on the internet, EasyList, <a href="https://easylist.to/2011/07/11/the-definition-of-advert-and-link-exchange-policy.html">uses a much more narrow definition of an “advert” than the dictionary does</a>: they only block ads that are sold to a third party.
+<p>Mostly, ad blockers will block something if it is sent through an ad network.
+<p>An <i>ad network</i> is a company that matches up ads with websites. It’s kind of like online dating: the web sites and advertisers use keywords to identify the interests that they cater to, and the ad network is the matchmaker that puts them together <sup id=boot-3><a href=#foot-3>3</a></sup>.
+<section class=center><img src=cheesy-diagram.svg></section>
+<p>And all of the downsides of online dating apply to ad networking. The author of the content might be perfectly trustworthy, but if their website is matched with a bad advertiser, the result is a really bad date. And because ad networks are so permissive, nobody knows if it’s going to turn out well until it’s already too late.
+<p>Ad blockers will definitely not block advertisements <a href=https://www.amazon.com/Manufacturing-Consent-audiobook/dp/B06Y2LSTZZ>that are completely integrated with the content that you wanted to open</a>, but when that sort of thing happens, it means that the author of the content knew about what they were advertising, instead of just having a banner ad automatically stuck to their page. Figuring out if you can trust the author of the web page that you opened is something you had to do anyway.
 <h2 id=hd>Does Google Chrome already have an ad blocker?</h2>
 <p>Google Chrome ships with a list that blocks ads <a href=https://fossbytes.com/google-chrome-ad-blocker-released/>that are discovered to not meet the Better Ads Standards</a>. While I applaud any attempt to penalize ads that cover up content or play sound, this doesn’t seem to have done much about fraud or malware ads.
 <p>Google already tries to enforce ad standards; they run the biggest ad network on the internet, and by the time they get around to removing bad ads, the ad has already done damage and the bad actors have already moved onto another cheap and burnable shell company. Their ad blocker doesn’t affect any of this.
