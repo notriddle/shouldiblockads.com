@@ -165,9 +165,8 @@ for (var i = 0; i < l; ++i) {
   if (c && h) {
     var a = document.createElement("a");
     a.innerHTML = "<img src=share.svg alt=share width=16 height=16>";
-    a.href = "http://www.twitter.com/share?url=" + c.href;
+    a.href = "mailto:?subject=" + encodeURIComponent(h.innerHTML) + "&body=" + encodeURIComponent(c.href);
     a.className = "share";
-    a.target = "_twitter";
     e.insertBefore(a, e.firstChild);
     if (navigator.share) {
       a.addEventListener("click", function(e) {
@@ -183,9 +182,8 @@ for (var i = 0; i < l; ++i) {
 
 var a = document.createElement("a");
 a.innerHTML = "<img src=share.svg alt=share width=16 height=16>";
-a.href = "http://www.twitter.com/share?text=Should I Block Ads?&url=" + window.location.href;
+a.href = "mailto:?subject=" + encodeURIComponent("Should I Block Ads?") + "&body=" + encodeURIComponent(window.location.href);
 a.className = "share";
-a.target = "_twitter";
 var e = document.getElementsByTagName("header")[0];
 e.insertBefore(a, e.firstChild);
 if (navigator.share) {
